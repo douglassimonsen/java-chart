@@ -32,6 +32,7 @@ class Demo extends Frame {
      Line2D vect = new Line2D.Double();
      vect.setLine(100,100,400,400);  
      g2.setColor(Color.blue);
+     g2.setStroke(new BasicStroke(4f));
      g2.draw (vect);
   }
 }
