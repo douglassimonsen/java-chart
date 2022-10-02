@@ -51,7 +51,12 @@ class Demo extends Frame {
     g2.setStroke(new BasicStroke(4f));
     for(int i=0;i<vecs.length;i++){
       Line2D vect = new Line2D.Double();
-      vect.setLine(200,200, 200 + vecs[i].x, 200 - vecs[i].y);  
+      vect.setLine(
+        200,
+        200, 
+        200 + vecs[i].x,
+         200 - vecs[i].y
+      ); // online said something about userspace, so for some reason that means the y-axis is flipped??
       g2.draw (vect);
     }
   }
